@@ -1,4 +1,4 @@
-import {Box, Divider, Grid, Paper, withStyles} from "@material-ui/core";
+import {Box, Divider, Grid, Paper, withStyles, Link} from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
 import React from "react";
 import {useStyles} from "../Utils";
@@ -166,7 +166,7 @@ class ClubsTab extends React.Component {
                                 <Typography variant={"h6"}> zipcode: {this.state.selectedClub?.zip}</Typography>
                             </Grid>
                             <Grid item>
-                                <Typography variant={"h6"}> website: {this.state.selectedClub?.site ? this.state.selectedClub?.site: "No website"}</Typography>
+                                <Typography variant={"h6"}> website: {this.state.selectedClub?.site !== "" ? <Link href={"http://" + this.state.selectedClub?.site} target="_blank">{this.state.selectedClub?.site}</Link>: "No website"}</Typography>
                             </Grid>
                             <div style={{padding: 6}}>
                                 <Divider/>
