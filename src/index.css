@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+
+.zoomed:hover {
+  position: relative;
+  z-index: 100;
+  transition: transform 0.2s ease-in-out;
+  transform: scale3d(3, 3, 1);
+}
+
+.clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
