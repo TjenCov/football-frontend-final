@@ -156,6 +156,18 @@ class ClubsTab extends React.Component {
                             <Grid item justify={"flex-start"} xs={12}>
                                 <Typography variant={"h4"} style={{textDecorationLine: 'underline'}}>{this.state.selectedClub.name}</Typography>
                             </Grid>
+                            <Grid item>
+                                <Typography variant={"h6"}> address: {this.state.selectedClub?.address}</Typography>
+                            </Grid>
+                            <Grid item>
+                                <Typography variant={"h6"}> city: {this.state.selectedClub?.city}</Typography>
+                            </Grid>
+                            <Grid item>
+                                <Typography variant={"h6"}> zipcode: {this.state.selectedClub?.zip}</Typography>
+                            </Grid>
+                            <Grid item>
+                                <Typography variant={"h6"}> website: {this.state.selectedClub?.site ? this.state.selectedClub?.site: "No website"}</Typography>
+                            </Grid>
                             <div style={{padding: 6}}>
                                 <Divider/>
                             </div>

@@ -420,7 +420,7 @@ class MyClubTab extends React.Component {
 
                             <Grid item>
                                 <Typography variant={"h6"} align={"center"}>Website:
-                                    <Link href={club?.site}>
+                                    <Link href={"http://" + club?.site} target="_blank" >
                                          { " " + club?.site}
                                     </Link>
                                 </Typography>
